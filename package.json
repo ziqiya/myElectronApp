@@ -6,9 +6,11 @@
   "license": "MIT",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "commit": "./node_modules/cz-customizable/standalone.js"
   },
   "devDependencies": {
+    "cz-customizable": "^6.2.0",
     "electron": "^8.2.3"
   }
 }
