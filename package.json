@@ -1,16 +1,26 @@
 {
-  "name": "electronapp",
-  "version": "1.0.0",
-  "description": "",
-  "author": "",
+  "name": "blog-app",
+  "version": "0.1.0",
+  "description": "我的博客APP",
+  "author": "Michael",
   "license": "MIT",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "commit": "./node_modules/cz-customizable/standalone.js"
+    "commit": "./node_modules/cz-customizable/standalone.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps" 
+  },
+  "build": {
+    "appId": "123456",
+    "mac": {
+      "category": "your.app.category.type"
+    }
   },
   "devDependencies": {
     "cz-customizable": "^6.2.0",
-    "electron": "^8.2.3"
+    "electron": "^8.2.3",
+    "electron-builder": "^22.4.1"
   }
 }

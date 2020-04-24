@@ -11,7 +11,9 @@ function createWindow() {
   });
 
   // 加载index.html文件
-  win.loadFile("index.html");
+  // win.loadFile("index.html");
+  // 加载博客页面
+  win.loadURL("https://www.ruanxusong.com");
 }
 
 app.whenReady().then(createWindow);
