@@ -2,3 +2,7 @@
 /node_modules
 
 /dist
+out/
+
+# misc
+.DS_Store
